@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Austin junk removal, lawn care, and property services. Same-day service. Call or text G&D Property Services today." />
-  <meta name="keywords" content="Austin junk removal, lawn care Austin, hauling, property services, yard cleanup" />
+
   <title>Austin Junk Removal & Lawn Care | G&D Property Services</title>
+
+  <meta name="description" content="Austin junk removal, lawn care, and property services. Same-day service. Call or text G&D Property Services today." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="gd-property-logo.png" />
@@ -14,87 +15,99 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #e6e6e6;
       color: #222;
     }
 
     header {
-      background: #1f4e8c;
+      background: #2f2f2f;
       color: white;
       padding: 20px;
-      text-align: center;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-container img {
+      width: 70px;
     }
 
     nav {
-      background: #163a66;
-      padding: 10px;
+      background: #1f1f1f;
+      padding: 12px;
       text-align: center;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 18px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .hero {
-      background: #1f4e8c;
-      padding: 60px 20px;
+      background: #dcdcdc;
+      padding: 70px 20px;
       text-align: center;
-      color: white;
-    }
-
-    .hero img {
-      width: 180px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
     }
 
     .hero h1 {
       font-size: 42px;
-      margin: 10px 0;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .hero strong {
+      font-size: 22px;
     }
 
     .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+      background: #ffffff;
+      padding: 45px 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
     .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      background: #f7f7f7;
+      padding: 25px;
+      border-radius: 8px;
     }
 
-    footer {
-      background: #1f4e8c;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+    .card h3 {
+      margin-top: 0;
     }
 
     form input, form textarea {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
+      padding: 14px;
+      margin: 12px 0;
       border-radius: 6px;
-      border: 1px solid #ccc;
+      border: 1px solid #bbb;
+      font-size: 16px;
     }
 
     form button {
-      background: #1f4e8c;
+      background: #2f2f2f;
       color: white;
-      padding: 14px;
+      padding: 15px;
       border: none;
       width: 100%;
       font-size: 18px;
@@ -102,15 +115,22 @@
       cursor: pointer;
     }
 
+    footer {
+      background: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 50px;
+    }
+
     .call-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #1f4e8c;
+      background: #2f2f2f;
       color: white;
-      padding: 15px 20px;
-      border-radius: 50px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      padding: 15px 22px;
+      border-radius: 40px;
       font-size: 18px;
       font-weight: bold;
       z-index: 999;
@@ -122,11 +142,17 @@
     }
 
     @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-container img {
+        width: 60px;
+      }
+
       .hero h1 {
         font-size: 32px;
-      }
-      .hero img {
-        width: 150px;
       }
     }
   </style>
@@ -135,8 +161,13 @@
 <body>
 
 <header>
-  <h2>G&D Property Services</h2>
-  <p>Junk Removal • Lawn Care • Property Services</p>
+  <div class="header-container">
+    <img src="gd-property-logo.png" alt="G&D Property Services Logo">
+    <div>
+      <h2>G&D Property Services</h2>
+      <p>Junk Removal • Lawn Care • Property Services</p>
+    </div>
+  </div>
 </header>
 
 <nav>
@@ -150,81 +181,75 @@
 </div>
 
 <section class="hero">
-  <!-- LOGO IN HERO -->
-  <img src="gd-property-logo.png" alt="G&D Property Services Logo" />
-
-  <h1>Fast. Affordable. Reliable.</h1>
-  <p>Your trusted local team for junk removal, lawn care, and property services.</p>
-
-  <p style="font-size:22px; font-weight:bold; margin-top:20px;">
-    📞 Call or Text Now: 512-666-7026
-  </p>
-
-  <p>Same-day & next-day availability</p>
+  <h1>Fast. Reliable. Professional.</h1>
+  <p>Austin’s trusted local team for junk removal and lawn care.</p>
+  <p><strong>Call or Text: 512‑666‑7026</strong></p>
+  <p>Same‑Day & Next‑Day Service Available</p>
 </section>
 
 <section id="services" class="section">
   <h2>Our Services</h2>
-  <p style="font-size:18px; margin-bottom:25px;">
-    Upfront pricing. No hidden fees. Fast turnaround.
-  </p>
-
   <div class="services">
     <div class="card">
       <h3>Junk Removal</h3>
-      <p>Furniture, garage cleanouts, yard debris, appliances.</p>
+      <p>Furniture, garage cleanouts, yard debris, appliances, and hauling.</p>
     </div>
 
     <div class="card">
-      <h3>Lawn Maintenance</h3>
-      <p>Mowing, edging, trimming, seasonal cleanup.</p>
+      <h3>Lawn & Yard Maintenance</h3>
+      <p>Mowing, edging, trimming, cleanups, and recurring service.</p>
     </div>
 
     <div class="card">
       <h3>Property Services</h3>
-      <p>Move help, hauling, general labor.</p>
+      <p>Move help, hauling, general labor, and property assistance.</p>
     </div>
   </div>
 </section>
 
 <section id="pricing" class="section">
   <h2>Pricing</h2>
-
   <div class="services">
+
     <div class="card">
       <h3>Junk Removal</h3>
-      <p>Small Load: <strong>$60–$100</strong></p>
-      <p>Medium Load: <strong>$120–$180</strong></p>
-      <p>Large Load: <strong>$200–$350</strong></p>
+      <p>Small Load: <strong>$100–$150</strong></p>
+      <p>Medium Load: <strong>$180–$300</strong></p>
+      <p>Large Load: <strong>$350–$600+</strong></p>
     </div>
 
     <div class="card">
-      <h3>Lawn Care</h3>
-      <p>Small Yard: <strong>$35–$50</strong></p>
-      <p>Medium Yard: <strong>$50–$75</strong></p>
-      <p>Large Yard: <strong>$80–$120</strong></p>
+      <h3>Lawn & Yard Work</h3>
+      <p>Small Yard: <strong>$60–$75</strong></p>
+      <p>Medium Yard: <strong>$80–$110</strong></p>
+      <p>Large Yard / Cleanup: <strong>$130–$200+</strong></p>
     </div>
 
     <div class="card">
       <h3>Property Services</h3>
-      <p>General Labor: <strong>$25/hr</strong></p>
-      <p>Move Help: <strong>$40/hr each</strong></p>
+      <p>General Labor: <strong>$40/hr</strong></p>
+      <p>Move Help: <strong>$60/hr per worker</strong></p>
     </div>
+
   </div>
 </section>
 
 <section id="contact" class="section">
-  <h2>Book a Free Quote</h2>
+  <h2>Request a Free Quote</h2>
 
-  <form>
-    <input type="text" placeholder="Name" required />
-    <input type="tel" placeholder="Phone Number" required />
-    <textarea placeholder="What do you need help with?" rows="4"></textarea>
-    <button type="submit">Request Quote</button>
+  <form action="https://formsubmit.co/gdservicesteam@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Quote Request - G&D Property Services">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" rows="4" placeholder="Describe what you need done" required></textarea>
+
+    <button type="submit">Send Quote Request</button>
   </form>
 
-  <p style="margin-top:15px; text-align:center;">
-    <strong>Call/Text:</strong> 512-666-7026<br>
+  <p style="text-align:center; margin-top:20px;">
+    <strong>Call/Text:</strong> 512‑666‑7026<br>
     <strong>Email:</strong> gdservicesteam@gmail.com
   </p>
 </section>
@@ -235,3 +260,4 @@
 
 </body>
 </html>
+
